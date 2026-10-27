@@ -26,5 +26,5 @@ Run NNprediction.m after checking its workbook name and data range. It reads the
 
 SD_SS_Multi.xlsx contains 484 alloy records. Shapley_value.m trains a 14-input ANN and evaluates descriptor contributions using predict.m. These files support training and interpretation but are not required to use the exported model. SHAP analysis also requires Statistics and Machine Learning Toolbox.
 
-**Reference**
+**Reference**:
 Gong et al. (2024). Thermodynamic Descriptors for Rapid Search of Compositional Complex Spinodal Alloys with Artificial Neural Network. https://doi.org/10.1007/s44210-024-00047-x
