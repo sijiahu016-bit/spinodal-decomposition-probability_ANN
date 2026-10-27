@@ -2,7 +2,7 @@
 This repository provides MATLAB code for calculating descriptors from alloy compositions and using a trained artificial neural network (ANN) to predict the probability of spinodal decomposition. The workflow enables computational screening of candidate compositions before experimental validation.
 **Before you start**
 Keep the code and Excel files in the same folder and set it as the MATLAB current folder. The supplied workbook illustrates the Al–Co–Cr–Fe–Ni system. To study another system, prepare your own composition workbook and update the filenames, sheet names, and row ranges in the relevant scripts. MATLAB R2019a or later is required; normalization and training use Deep Learning Toolbox.
-Generate Candidate Compositions
+**Generate Candidate Compositions**
 For a five-element system, run Generate_5fraction.m after setting the composition limits and step size for the selected elements. Use a suitable generator for a different number of elements. Prepare the candidates in your input workbook: column B contains the number of elements, column C the space-separated element symbols, and column D the corresponding space-separated ratios. Ensure the elements are supported by the property and enthalpy databases. Manually transfer the generated compositions to the input workbook.
 **Calculate the Model Descriptors**
 Run main.m. It calls calculatefeatures.m and uses properties.xlsx, OQMD_Enthalpy.xlsx, and Orthogonalization_matrix.xlsx to calculate descriptors, including the minimum Hessian eigenvalue at the average melting temperature. The current implementation also calls SE.m.
